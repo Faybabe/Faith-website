@@ -18,7 +18,7 @@
       }
       .test-class{
         background-color: white;
-        color: white;
+        color: black;
         font-family: "Times New Roman";
       }
 
@@ -31,11 +31,8 @@
         background-color: #000000;
       }
       .glowy-thing{
-        display: block;
-        width: 100px;
-        height: 100px;
         background-color: white;
-        box-shadow: 0px 0px 10px pink;
+        min-height: 300px;
       }
 
       .glowybx-red{
@@ -55,6 +52,15 @@
         height: 100%;
       }
 
+      .custom-col{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .computer-background{
+        width: 100%;
+        height: auto;
+      }
     </style>
   </head>
   <body>
@@ -64,33 +70,36 @@
 
     <div class="container">
       <div class="row row-eq-height mt-4">
-        <div class="col-lg-3">
-          <div class="glowybx-purple">
+        <div class="col-lg-3 custom-col">
+          <div class="card glowybx-purple glowy-thing">
             <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
             <div class="card-body">
-
               <h5 class="card-title">Education</h5>
               <p class="card-text">Educational History. Click below to load more info. </p>
+              <br>
+              <br>
               <a href="#" class="btn btn-primary">To Education</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3">
-          <div class="glowybx-pink">
+        <div class="col-lg-3 custom-col">
+          <div class="card glowybx-pink glowy-thing">
             <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
             <div class="card-body">
               <h5 class="card-title">Work History</h5>
               <p class="card-text">Work History. Click below to load more info.</p>
+              <br>
+              <br>
               <a href="#" class="btn btn-primary">To Work History</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3">
-          <div class="glowybx-blue">
+        <div class="col-lg-3 custom-col">
+          <div class="card glowybx-blue glowy-thing">
             <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title">Leadership and Volunteer</h5>
               <p class="card-text">A quick preview of my leadership and educational volunteer opputunities.</p>
               <a href="#" class="btn btn-primary">Lauch Preview</a>
@@ -98,11 +107,11 @@
           </div>
         </div>
 
-        <div class="col-lg-3">
-          <div class="glowybx-red">
+        <div class="col-lg-3 custom-col">
+          <div class="card glowybx-red glowy-thing">
             <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
             <div class="card-body">
-              <h5 class="card-title">Conact me!</h5>
+              <h5 class="card-title">Contact me!</h5>
               <p class="card-text">Click here to get in touch with me. Click below to display my contact information.</p>
               <a href="#" class="btn btn-primary">Display information</a>
             </div>
@@ -111,6 +120,7 @@
 
       </div>
     </div>
+    <img class="computer-background" src="./computer.jpg">
 
 
 
